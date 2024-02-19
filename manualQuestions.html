@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Custom Quiz</title>
+</head>
+<body>
+    <div id="quiz-container">
+        <h1>Custom Quiz</h1>
+        <button id="add-question-button">Add Question</button>
+        <button id="play-button">Play</button>
+    </div>
+
+    <div id="question-container" style="display: none;">
+        <p id="question-text"></p>
+    </div>
+
+    <div id="answer-container" style="display: none;">
+        <label>
+            <input type="radio" name="answer" value="0">
+            <span id="answer0"></span>
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="answer" value="1">
+            <span id="answer1"></span>
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="answer" value="2">
+            <span id="answer2"></span>
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="answer" value="3">
+            <span id="answer3"></span>
+        </label>
+        <br>
+        <button id="submit-button">Submit</button>
+    </div>
+
+    <div id="feedback" style="display: none;">
+        <p id="feedback-text"></p>
+    </div>
+
+    <div id="question-input" style="display: none;">
+        <label for="new-question">Enter your question:</label>
+        <input type="text" id="new-question"><br>
+        <label for="new-answer1">Enter answer 1:</label>
+        <input type="text" id="new-answer1"><br>
+        <label for="new-answer2">Enter answer 2:</label>
+        <input type="text" id="new-answer2"><br>
+        <label for="new-answer3">Enter answer 3:</label>
+        <input type="text" id="new-answer3"><br>
+        <label for="new-answer4">Enter answer 4:</label>
+        <input type="text" id="new-answer4"><br>
+        <label for="new-correct-answer">Enter the index of the correct answer (0-3):</label>
+        <input type="text" id="new-correct-answer"><br>
+        <button id="add-new-question">Add New Question</button>
+    </div>
+
+    <div id="question-list" style="display: none;">
+        <h2>Your Questions:</h2>
+        <ul id="question-ul"></ul>
+    </div>
+
+    <script src="quiz.js"></script>
+</body>
+</html>
